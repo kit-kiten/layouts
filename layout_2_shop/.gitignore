@@ -1,8 +1,10 @@
 .DS_Store
 .idea/
 .idea/*
-dist/
-node_modules
+.vscode
+*.sublime*
 npm-debug.*
+
+dist/
+node_modules/
 package-lock.json
-app/css/*
