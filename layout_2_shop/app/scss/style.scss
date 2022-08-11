@@ -2,24 +2,18 @@
 @import "vars";
 @import "global";
 
+//HEADER
 .header{
   font-family: 'Rubik', sans-serif;
   color: #436372;
   padding: 54px 0;
+
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__logo{
-    display: flex;
-  }
-
-  &__logo-title{
-    margin-left: 15px;
-    font-size: 36px;
-  }
 }
 
 .menu{
@@ -113,5 +107,139 @@
   }
 }
 
+//PRODUCTS
+
+.products-info{
+  padding: 48px 0;
+  background-color: #fef7f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  &__item{
+    display: flex;
+  }
+  &__img{
+    align-self: flex-start;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    margin-right: 25px;
+  }
+  &__img::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #dfe3e2;
+    right: 0;
+    top: 55%;
+    border-radius: 50px;
+    opacity: 0.8;
+  }
+  &__title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}
+
+//FOOTER
+
+.footer{
+  font-family: 'Rubik', sans-serif;
+  color: #436372;
+
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.footer-top{
+  padding: 80px 0 70px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 14px;
+  color: #7b7b7b;
+
+  .logo__title{
+    color: #436372;
+  }
+
+  &__item{
+    max-width: 200px;
+  }
+
+  &__address{
+    display: block;
+    margin: 26px 0 14px;
+    line-height: 24px;
+  }
+
+  &__phone{
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__title{
+    font-size: 16px;
+    color: #1f2044;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  &__link{
+    line-height: 32px;
+  }
+
+  &__item-subscribe{
+    max-width: 270px;
+  }
+
+  &__text{
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  &__form-input{
+    background-color: #fef7f0;
+    width: 170px;
+    padding: 14px;
+    border: none;
+    outline-color: #fcd7b6;
+  }
+
+  &__form-btn{
+    background-color: #a3bbc8;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+
+.footer-bottom{
+  padding: 34px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #7b7b7b;
+  font-size: 14px;
+
+  &__list{
+    display: flex;
+  }
+
+  &__item + .footer-bottom__item{
+    border-left: 1px solid #7b7b7b;
+  }
+
+  &__link{
+    padding: 0 15px;
+  }
+}
 
 @import "media";

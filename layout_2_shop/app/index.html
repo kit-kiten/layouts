@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@500&display=swap" rel="stylesheet">
@@ -15,9 +16,9 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">
-                    <img class="header__logo-img" src="./images/logo.png" alt="header logo">
-                    <h1 class="header__logo-title">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./images/logo.png" alt="header logo">
+                    <h1 class="logo__title">
                         Glee.
                     </h1>
                 </a>
@@ -78,6 +79,190 @@
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="products">
+            <div class="container">
+                <div class="products-info">
+                    <div class="products-info__item">
+                        <div class="products-info__img">
+                            <img src="images/support-icon.svg" alt="info img">
+                        </div>
+                        <div class="products-info__inner">
+                            <h4 class="products-info__title">
+                                Support 24/7.
+                            </h4>
+                            <p class="products-info__text">
+                                Contact us 24 hours a day,<br>
+                                7 days a week.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products-info__item">
+                        <div class="products-info__img">
+                            <img src="images/delivery-icon.svg" alt="info img">
+                        </div>
+                        <div class="products-info__inner">
+                            <h4 class="products-info__title">
+                                Delivery.
+                            </h4>
+                            <p class="products-info__text">
+                                Free shipping on all US order.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="products-info__item">
+                        <div class="products-info__img">
+                            <img src="images/credit-icon.svg" alt="info img">
+                        </div>
+                        <div class="products-info__inner">
+                            <h4 class="products-info__title">
+                                100% Payment secure.
+                            </h4>
+                            <p class="products-info__text">
+                                We ensure secure payment<br>
+                                with PEV.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer-top">
+                <div class="footer-top__item">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="./images/logo.png" alt="header logo">
+                        <h1 class="logo__title">
+                            Glee.
+                        </h1>
+                    </a>
+                    <a href="#" class="footer-top__address">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </a>
+                    <a href="tel:+8323475843" class="footer-top__phone">
+                        Telephone: +832-347-5843
+                    </a>
+                    <a href="mailto:contact@Glee.com" class="footer-top__email">
+                        Email: contact@Glee.com
+                    </a>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">
+                        Services
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">
+                        Account
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-subscribe">
+                    <h6 class="footer-top__title">
+                        newsletter
+                    </h6>
+                    <p class="footer-top__text">
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                    <form action="#" class="footer-top__form">
+                        <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+                        <button class="footer-top__form-btn" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">
+                    ©2022 CopyRight Example. All rights reserved
+                </p>
+                <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.min.js"></script>
 </body>
